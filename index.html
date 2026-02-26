@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>QCU Quiz</title>
+<style>
+  body { font-family: Arial; display: flex; flex-direction: column; align-items: center; padding: 50px; background: #f0f4f7; color: #333; }
+  h1 { color: #1e3a8a; }
+  #question-container { background: #fff; padding: 20px 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 700px; width: 100%; text-align: left; word-wrap: break-word; overflow-wrap: break-word; }
+  button.choice-btn { display: block; width: 100%; margin: 10px 0; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; text-align: left; white-space: normal; transition: background 0.3s, transform 0.2s; }
+  button.choice-btn:hover { transform: scale(1.02); }
+  button.correct { background-color: #4ade80; color: #fff; }
+  button.wrong { background-color: #f87171; color: #fff; }
+  #next-btn { margin-top: 20px; padding: 10px 25px; border: none; border-radius: 8px; cursor: pointer; background-color: #2563eb; color: white; font-size: 16px; transition: background 0.3s; }
+  #next-btn:hover { background-color: #1e40af; }
+</style>
+</head>
+<body>
+<h1>Quiz QCU</h1>
+<div id="question-container"></div>
+<script src="script.js"></script>
+</body>
+</html>
