@@ -778,17 +778,21 @@ function shuffleArray(array) {
   }
   return arr;
 }
+// ... (Garder la liste des questions et shuffleArray au début du fichier) ...
 
-// ------------------------------
-// Affiche la question actuelle
-// ------------------------------
+function updateProgressBar() {
+  const progress = ((currentIndex) / selectedQuestions.length) * 100;
+  document.getElementById('progress-bar').style.width = `${progress}%`;
+}
+
 function showQuestion() {
+  updateProgressBar();
   const container = document.getElementById('question-container');
   container.innerHTML = '';
   const questionObj = selectedQuestions[currentIndex];
 
   const q = document.createElement('h2');
-  q.textContent = `Question ${currentIndex + 1}: ${questionObj.question}`;
+  q.textContent = questionObj.question; // Plus besoin du numéro ici, la barre de progression le montre
   container.appendChild(q);
 
   questionObj.choices.forEach((choice, index) => {
@@ -800,39 +804,52 @@ function showQuestion() {
   });
 }
 
-// ------------------------------
-// Gérer la sélection d'une réponse
-// ------------------------------
 function selectAnswer(selectedIndex) {
   const questionObj = selectedQuestions[currentIndex];
   const buttons = document.querySelectorAll('.choice-btn');
 
   buttons.forEach((btn, i) => {
-    if (i === questionObj.correct) btn.classList.add('correct');
-    else if (i === selectedIndex && i !== questionObj.correct) btn.classList.add('wrong');
     btn.disabled = true;
+    if (i === questionObj.correct) {
+      btn.classList.add('correct');
+    } else if (i === selectedIndex) {
+      btn.classList.add('wrong');
+    }
   });
 
   if (selectedIndex === questionObj.correct) score++;
 
   const container = document.getElementById('question-container');
   const nextBtn = document.createElement('button');
-  nextBtn.textContent = currentIndex < selectedQuestions.length - 1 ? 'Question suivante' : 'Terminer';
+  nextBtn.textContent = currentIndex < selectedQuestions.length - 1 ? 'Question suivante' : 'Voir mon résultat';
   nextBtn.id = 'next-btn';
   nextBtn.onclick = () => {
     currentIndex++;
-    if (currentIndex < selectedQuestions.length) showQuestion();
-    else showResult();
+    if (currentIndex < selectedQuestions.length) {
+      showQuestion();
+    } else {
+      showResult();
+    }
   };
   container.appendChild(nextBtn);
+  
+  // Auto-scroll vers le bouton suivant sur petit écran
+  nextBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
-// ------------------------------
-// Afficher le résultat final
-// ------------------------------
 function showResult() {
+  document.getElementById('progress-bar').style.width = `100%`;
   const container = document.getElementById('question-container');
-  container.innerHTML = `<h2>Quiz terminé !</h2>
-                         <p>Votre score : ${score} / ${selectedQuestions.length}</p>
-                         <button onclick="startQuiz()" id="next-btn">Recommencer</button>`;
+  const percent = Math.round((score / selectedQuestions.length) * 100);
+  
+  let message = percent >= 60 ? "Félicitations ! 🎉" : "Encore un peu d'entraînement... 💪";
+
+  container.innerHTML = `
+    <div class="score-final">
+      <h2>${message}</h2>
+      <p style="font-size: 2rem; margin: 10px 0;">${score} / ${selectedQuestions.length}</p>
+      <p>Soit une réussite de ${percent}%</p>
+      <button onclick="startQuiz()" id="next-btn">Recommencer le Quiz</button>
+    </div>
+  `;
 }
