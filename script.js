@@ -857,7 +857,7 @@ function showResult() {
 
 function envoyerScore(pseudo, score) {
 
-    const formURL = "https://docs.google.com/forms/d/e/TON_ID_FORMULAIRE/formResponse";
+    const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSf4GJw9ThelB_NLW_QS9CuCH70TYH91oljwNouFhwTyopfmcA/formResponse";
 
     const data = new FormData();
     data.append("entry.99914382", pseudo);   // remplace par TON id prénom
