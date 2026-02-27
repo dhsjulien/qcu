@@ -846,11 +846,17 @@ function showResult() {
   if (prenom) {
       envoyerScore(prenom, score);
   }
+    
 
   container.innerHTML = `<h2>Quiz terminé !</h2>
                          <p>Votre score : ${score} / ${selectedQuestions.length}</p>
                          <p>Score envoyé au classement 🔥</p>
                          <button onclick="startQuiz()" id="next-btn">Recommencer</button>`;
+
+setTimeout(() => {
+    chargerClassement();
+}, 1000);
+    
 }
 
 function envoyerScore(pseudo, score) {
