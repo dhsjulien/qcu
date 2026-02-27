@@ -839,20 +839,18 @@ function selectAnswer(selectedIndex) {
 }
 
 function showResult() {
-  document.getElementById('progress-bar').style.width = `100%`;
   const container = document.getElementById('question-container');
-  const percent = Math.round((score / selectedQuestions.length) * 100);
-  
-  let message = percent >= 60 ? "Félicitations ! 🎉" : "Encore un peu d'entraînement... 💪";
 
-  container.innerHTML = `
-    <div class="score-final">
-      <h2>${message}</h2>
-      <p style="font-size: 2rem; margin: 10px 0;">${score} / ${selectedQuestions.length}</p>
-      <p>Soit une réussite de ${percent}%</p>
-      <button onclick="startQuiz()" id="next-btn">Recommencer le Quiz</button>
-    </div>
-  `;
+  const prenom = prompt("Entre ton prénom pour le classement :");
+
+  if (prenom) {
+      envoyerScore(prenom, score);
+  }
+
+  container.innerHTML = `<h2>Quiz terminé !</h2>
+                         <p>Votre score : ${score} / ${selectedQuestions.length}</p>
+                         <p>Score envoyé au classement 🔥</p>
+                         <button onclick="startQuiz()" id="next-btn">Recommencer</button>`;
 }
 
 function envoyerScore(pseudo, score) {
