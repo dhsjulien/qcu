@@ -905,3 +905,4 @@ function chargerClassement() {
         });
 }
 
+chargerClassement();
