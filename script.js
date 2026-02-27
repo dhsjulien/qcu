@@ -868,3 +868,32 @@ function envoyerScore(pseudo, score) {
     });
 
 }
+function chargerClassement() {
+
+    const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxOARfZjVPluO7ZKA_xUHjz0FapokCHrmLmQ750QTxPXaH1yhVvFIDltC6Ws2qXehkpxYppIbTgfAb/pub?output=csv
+";
+
+    fetch(sheetURL)
+        .then(response => response.text())
+        .then(data => {
+
+            const rows = data.split("\n").slice(1);
+
+            let joueurs = rows.map(row => {
+                const cols = row.split(",");
+                return {
+                    prenom: cols[0],
+                    score: parseInt(cols[1])
+                };
+            }).filter(j => j.prenom && !isNaN(j.score));
+
+            joueurs.sort((a, b) => b.score - a.score);
+
+            const leaderboard = document.getElementById("leaderboard");
+
+            leaderboard.innerHTML = joueurs
+                .slice(0, 10)
+                .map((j, i) => `${i + 1}. ${j.prenom} - ${j.score}`)
+                .join("<br>");
+        });
+}
