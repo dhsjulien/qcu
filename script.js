@@ -855,13 +855,13 @@ function showResult() {
   `;
 }
 
-function envoyerScore(prenom, score) {
+function envoyerScore(pseudo, score) {
 
     const formURL = "https://docs.google.com/forms/d/e/TON_ID_FORMULAIRE/formResponse";
 
     const data = new FormData();
-    data.append("entry.123456", prenom);   // remplace par TON id prénom
-    data.append("entry.654321", score);    // remplace par TON id score
+    data.append("entry.99914382", pseudo);   // remplace par TON id prénom
+    data.append("entry.671360060", score);    // remplace par TON id score
 
     fetch(formURL, {
         method: "POST",
