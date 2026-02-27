@@ -897,3 +897,4 @@ function chargerClassement() {
                 .join("<br>");
         });
 }
+chargerClassement();
