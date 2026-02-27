@@ -854,3 +854,19 @@ function showResult() {
     </div>
   `;
 }
+
+function envoyerScore(prenom, score) {
+
+    const formURL = "https://docs.google.com/forms/d/e/TON_ID_FORMULAIRE/formResponse";
+
+    const data = new FormData();
+    data.append("entry.123456", prenom);   // remplace par TON id prénom
+    data.append("entry.654321", score);    // remplace par TON id score
+
+    fetch(formURL, {
+        method: "POST",
+        mode: "no-cors",
+        body: data
+    });
+
+}
