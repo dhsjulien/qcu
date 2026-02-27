@@ -760,6 +760,7 @@ let selectedQuestions = [];
 // Démarrer le quiz
 // ------------------------------
 startQuiz();
+chargerClassement();
 
 function startQuiz() {
   selectedQuestions = shuffleArray(questions).slice(0, 20);
@@ -903,4 +904,4 @@ function chargerClassement() {
                 .join("<br>");
         });
 }
-chargerClassement();
+
