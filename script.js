@@ -834,5 +834,11 @@ function showResult() {
   const container = document.getElementById('question-container');
   container.innerHTML = `<h2>Quiz terminé !</h2>
                          <p>Votre score : ${score} / ${selectedQuestions.length}</p>
+                         <p> Tu as 20 : Bravo belle/beau gosse. </p>
+                         <p> Tu as 19 : Grosse merde arrête la formation , t'as même pas réussi à avoir 20, tu seras jamais un vrai télésuveilleur. </p>
+                         <p> Tu as entre 15 et 18 : Tu es prêt ! Fait ça le jour de l'examen et tu vas dead ça comme disent les jeunes ! </p>
+                         <p> Tu as entre 10 et 15 : C'est correct mais tu peux mieux faire hein, c'est pas un truc de fou non plus tu veux une médaille ? </p>
+                         <p> Tu as entre 5 et 10 :  Bouge ton cul et commence à lire tes cours, c'est chaud mais tu peux te rattraper </p>
+                         <p> Tu as entre 0 et 5 : Arrête la formation, c'est pas fait pour toi </p>
                          <button onclick="startQuiz()" id="next-btn">Recommencer</button>`;
 }
