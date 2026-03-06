@@ -745,6 +745,384 @@ let questions = [
   {"id":124, "question":"On vous demande d'effectuer une palpation sur une personne.","choices":["La palpation peut se faire sans accord de la personne","Les agents de sécurité peuvent procéder à des palpations de sécurité sans conditions particulières","Retirer un vêtement","Aucune des réponses précédentes","La palpation ne peut se faire qu'avec l'accord de la personne"],"correct":4},
   {"id":125, "question":"L'hymne national peut être chanté :","choices":["Uniquement devant le Président de la République","Uniquement pour la fête nationale du 14 juillet","Par tout le monde","Uniquement par les militaires","Uniquement par les responsables politiques"],"correct":2},
   {"id":126, "question":"Un agent de sécurité n'est pas pénalement responsable :","choices":["Aucune des réponses précédentes","S'il commet un acte prescrit ou autorisé par des dispositions législatives ou réglementaires","S'il commet un homicide pour défendre un bien","S'il y a disproportion entre les moyens employées pour se défendre et la gravité de la menace"],"correct":1}
+    [
+{
+"id":127,
+"question":"Comment un agent qui participe à une prestation évènementielle peut-il prévenir un conflit ?",
+"choices":[
+"En haussant le ton dès qu'un conflit débute",
+"Aucune des autres réponses",
+"En démontrant aux personnes qui est détenteur de l'autorité",
+"En ayant une attitude et un comportement exemplaire",
+"En pratiquant un sport de combat"
+],
+"correct":3
+},
+{
+"id":128,
+"question":"Quelle est la première attitude à adopter pour résoudre un conflit ?",
+"choices":[
+"Ecoute active",
+"La fuite",
+"La confrontation",
+"L'agressivité",
+"Aucune des réponses"
+],
+"correct":0
+},
+{
+"id":129,
+"question":"Quelle est la conduite à tenir en cas de rixe ?",
+"choices":[
+"Appeler le PC et gérer les individus",
+"Faire appel aux forces de l'ordre et consulter médicalement",
+"Appeler la police et fuir",
+"Aucune des réponses précédentes",
+"Appliquer des techniques d'auto-défense"
+],
+"correct":1
+},
+{
+"id":130,
+"question":"Vous êtes en conflit avec une personne. Lors de vos échanges, vous devez :",
+"choices":[
+"Aucune des autres réponses",
+"Ecouter attentivement et vous baser sur les faits constatés",
+"Essayer de vous imposer par votre discours",
+"Ecouter passivement, acquiescer et vous excuser",
+"Parler plus que l'écouter"
+],
+"correct":1
+},
+{
+"id":131,
+"question":"Les règles de communication à utiliser lors d'un conflit sont :",
+"choices":[
+"Utiliser les marques de politesse et provoquer un intérêt pour l'autre personne",
+"Faire preuve d'ironie",
+"Ne pas regarder la personne",
+"Ignorer la personne"
+],
+"correct":0
+},
+{
+"id":0,
+"question":"L'attitude fermée correspond à quel mouvement corporel ?",
+"choices":[
+"Les bras croisés",
+"Poing fermé",
+"Aucune des réponses",
+"Se recoiffer"
+],
+"correct":-1
+},
+{
+"id":132,
+"question":"Quels sont les quatre types de comportement lors de la communication ?",
+"choices":[
+"Négatif-évitant-positif-attitude assertive",
+"Agressivité-fuite-manipulation-attitude assertive",
+"Conflictuel-fuyant-gentil-sûr de soi",
+"Conflictuel-évitant-positif-attitude assertive",
+"Agressivité-séduction-lâcheté-affirmation",
+"Conflictuel-évitant-constructif-charismatique"
+],
+"correct":1
+},
+{
+"id":133,
+"question":"Quels sont les indices de violence potentielle ?",
+"choices":[
+"Instabilité mentale-situation d'énervement-sentiment d'exclusion-sentiment d'injustice",
+"Situation d'attente-sentiments d'exclusion-préjugés-manque de respect",
+"Préjugés-situation interminable-sentiment d'exclusion-instabilité",
+"Sentiment d'injustice-attente-sentiment d'intrusion-exposition aux préjugés-instabilité mentale",
+"Injustice-préjugés-manque de respect-problèmes mentaux"
+],
+"correct":3
+},
+{
+"id":134,
+"question":"Quelle est la conduite à tenir lors d'une attaque à main armée ?",
+"choices":[
+"Aucune des réponses précédentes",
+"Essayer de désarmer l'agresseur",
+"Maîtriser l'agresseur",
+"Appeler un supérieur et apaiser",
+"Ne pas intervenir et garder son calme"
+],
+"correct":4
+},
+{
+"id":135,
+"question":"On peut diminuer la tension avec un interlocuteur en :",
+"choices":[
+"Aucune des réponses",
+"Lui demander fermement de se calmer",
+"Prendre le temps de l'écouter",
+"Appeler un technicien",
+"Être d'accord avec tout"
+],
+"correct":2
+},
+
+{
+"id":136,
+"question":"Parmi les propositions suivantes, laquelle n'est pas un facteur déclencheur d'agressivité ?",
+"choices":[
+"L'écoute",
+"Aucune des réponses",
+"La bienveillance",
+"La compréhension",
+"L'excès d'estime de soi"
+],
+"correct":2
+},
+
+{
+"id":137,
+"question":"Quels sont les facteurs déterminants internes de conduite conflictuelle ?",
+"choices":[
+"Impartialité humour retrait ambiguïté impolitesse",
+"Impulsivité instabilité excitabilité intolérance à la frustration besoin de gratification",
+"Gentil cool arrogant attentionné",
+"Toutes les réponses"
+],
+"correct":1
+},
+
+{
+"id":138,
+"question":"Lorsqu'un conflit n'est pas clairement déclaré il est :",
+"choices":[
+"Préalable",
+"Aucune des réponses",
+"Latent",
+"Dégradé",
+"Ouvert"
+],
+"correct":2
+},
+
+{
+"id":139,
+"question":"Une opposition d'idées où chacun exprime son hostilité s'appelle :",
+"choices":[
+"Interview",
+"Conflit",
+"Aucune des réponses",
+"Parrainage",
+"Exposé"
+],
+"correct":1
+},
+
+{
+"id":140,
+"question":"Quelles sont les étapes du comportement conflictuel ?",
+"choices":[
+"Aucune",
+"Accumulation émotionnelle, tension, panique, violence, détente",
+"Calme absence émotion non violent",
+"Impulsivité instabilité excitabilité"
+],
+"correct":1
+},
+
+{
+"id":141,
+"question":"Quelle attitude est adaptée pour résoudre un conflit ?",
+"choices":[
+"Critiquer écouter imposer inciter",
+"Imposer dialoguer interroger inciter",
+"Interroger contester reformuler accepter",
+"Aucune",
+"Ecouter reformuler interroger confirmer"
+],
+"correct":4
+},
+
+{
+"id":142,
+"question":"Quelle règle adopter pour prévenir les conflits ?",
+"choices":[
+"Adopter un cadre de référence et une élocution adaptée",
+"Parler fort",
+"Toutes les réponses",
+"Langage familier posture inadaptée"
+],
+"correct":0
+},
+
+{
+"id":143,
+"question":"Quelle méthode permet de résoudre un conflit ?",
+"choices":[
+"Méthode Heimlich",
+"Méthode assertive",
+"Technique Eric",
+"Aucune",
+"Technique Houel"
+],
+"correct":2
+},
+
+{
+"id":144,
+"question":"Un client demande une entorse aux consignes de filtrage :",
+"choices":[
+"Aucune des réponses ",
+"Non, ce sont les consignes",
+"Non, mais je vois avec mon chef",
+"Non, mais il existe peut-être une autre solution, on va essayer de voir",
+"D'accord mais ne le dites pas à mon chef "
+],
+"correct":3
+},
+
+{
+"id":145,
+"question":"Quelle règle utiliser pour désamorcer la colère ?",
+"choices":[
+"Aucune des réponses ",
+"Confirmer la façon dont vous allez traiter la demande",
+"Faire des réponses longues",
+"Ignorer la personne",
+"Eviter de répondre et parler plus fort"
+],
+"correct":1
+},
+
+{
+"id":145,
+"question":"Une personne vous provoque verbalement sur votre lieu de travail :",
+"choices":[
+"Inciter à l'agression pour pouvoir risposter",
+"Appeler immédiatement la police",
+"Faire intervenir un tiers pour désamorcer la situation",
+"L'évacuer par la force",
+"L'ignorer"
+],
+"correct":2
+},
+
+{
+"id":146,
+"question":"Un individu alcoolisé frappe quelqu'un sur le parking :",
+"choices":[
+"Intervenir car cela concerne l'établissement",
+"Intervenir pour légitime défense d'autrui",
+"Ne pas intervenir",
+"Aucune",
+"Appeler le SAMU"
+],
+"correct":0
+},
+
+{
+"id":147,
+"question":"Un client se plaint que son titre d'accès ne fonctionne pas :",
+"choices":[
+"Proposer vos services après votre vacation",
+"Refuser de répondre",
+"Lui procurer un titre valide",
+"L'écouter et l'orienter vers le service litiges",
+"Aucune"
+],
+"correct":3
+},
+
+{
+"id":148,
+"question":"Quel type de personne génère le plus de conflits ?",
+"choices":[
+"Une personne bavarde",
+"Une personne insatisfaite",
+"Aucune",
+"Une personne ne parlant pas français",
+"Une personne timide"
+],
+"correct":1
+},
+
+{
+"id":149,
+"question":"Lors d'un dialogue avec une personne agressive il faut faire attention :",
+"choices":[
+"Ne pas l'énerver garder son calme articuler",
+"Aucune",
+"Au regard voix gestes",
+"Intonation intensité débit de parole",
+"Au ton utilisé"
+],
+"correct":3
+},
+
+{
+"id":150,
+"question":"Un collègue est menacé verbalement par un client parti :",
+"choices":[
+"Le poursuivre",
+"Dossier clos",
+"Aucune",
+"Remonter le moral",
+"Rédiger un compte rendu"
+],
+"correct":4
+},
+
+{
+"id":151,
+"question":"Face à un interlocuteur agressif mon attitude doit être :",
+"choices":[
+"Baisser les yeux",
+"Parler plus fort",
+"Aucune",
+"Garder son calme avec une voix posée",
+"Transférer l'appel"
+],
+"correct":3
+},
+
+{
+"id":152,
+"question":"Une attitude bras croisés signifie :",
+"choices":[
+"Ouverture",
+"Accord",
+"Aucune",
+"Attitude fermée",
+"Hésitation"
+],
+"correct":3
+},
+
+{
+"id":153,
+"question":"Quels sont les styles de résolution de conflit ?",
+"choices":[
+"Abstentionniste oppressif conciliant coopératif compromis",
+"Compromis négationniste oppressif sympathique",
+"Aucune",
+"Négationniste oppressant conciliant refus compromis",
+"Oppressif insultant coopératif"
+],
+"correct":0
+},
+
+{
+"id":154,
+"question":"Quels types de conflits peut rencontrer un agent de sécurité ?",
+"choices":[
+"Conflit de personnes",
+"Toutes les réponses",
+"Conflit d'intérêts",
+"Conflit de position",
+"Conflits de valeurs"
+],
+"correct":1
+}
+]
 ]
 
 
